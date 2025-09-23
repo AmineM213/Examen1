@@ -15,7 +15,6 @@ public class GestionnaireBibliotheque {
     public void ajouterLivre(Livre livre) {
         if (livre != null) {
             livres.add(livre);
-            totalLivres++;
         }
     }
 
