@@ -4,13 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GestionnaireBibliotheque {
-    private List<Livre> livres;
-    private int totalLivres;
-
-    public GestionnaireBibliotheque() {
-        livres = new ArrayList<>();
-        totalLivres = 0;
-    }
+    private final List<Livre> livres = new ArrayList<>();
 
     public void ajouterLivre(Livre livre) {
         if (livre != null) {
