@@ -5,11 +5,7 @@ import java.util.List;
 
 public class GestionnaireStock {
 
-    private List<Produit> produits;
-
-    public GestionnaireStock() {
-        produits = new ArrayList<>();
-    }
+    private final List<Produit> produits = new ArrayList<>();
 
     public void ajouterProduit(Produit produit, boolean logAjout) {
         produits.add(produit);
@@ -22,16 +18,15 @@ public class GestionnaireStock {
         ajouterProduit(produit, false);
     }
 
-    public void afficherStock() {
+    private void afficherStockUneFois() {
         for (Produit produit : produits) {
             System.out.println(produit);
         }
     }
 
     public void afficherProduitsEnStock() {
-        afficherStock();
-        afficherStock();
+        afficherStockUneFois();
+        afficherStockUneFois();
         System.out.println("Affichage terminé.");
     }
-
 }
