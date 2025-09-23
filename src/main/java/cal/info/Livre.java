@@ -11,18 +11,6 @@ public class Livre {
         this.codeISBN = "Inconnu";
     }
 
-    public String getTitre() {
-        return titre;
-    }
-
-    public String getAuteur() {
-        return auteur;
-    }
-
-    public String getCodeISBN() {
-        return codeISBN;
-    }
-
     public String livreDetails() {
         return "Titre: " + titre + ", Auteur: " + auteur + ", ISBN: " + codeISBN;
     }
