@@ -24,9 +24,13 @@ public class GestionnaireBibliotheque {
         }
     }
 
-    public void afficherTitreEtAuteurLivres() {
+     public void afficherTitreEtAuteurLivres() {
         for (Livre livre : livres) {
-            System.out.println("-> Livre: " + livre.getTitre() + " par " + livre.getAuteur());
+            System.out.println(formatTitreEtAuteur(livre));
         }
+    }
+
+    private String formatTitreEtAuteur(Livre livre) {
+        return "-> Livre: " + livre.getTitre() + " par " + livre.getAuteur();
     }
 }
