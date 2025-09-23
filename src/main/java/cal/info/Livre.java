@@ -1,17 +1,25 @@
 package cal.info;
 
 public class Livre {
-    private String titre;
-    private String auteur;
-    private String codeISBN;
+    private final String titre;
+    private final String auteur;
+    private final String codeISBN;
 
     public Livre(String titre, String auteur) {
-        this.titre = titre;
-        this.auteur = auteur;
-        this.codeISBN = "Inconnu";
+        this(titre, auteur, "Inconnu");
     }
 
+    public Livre(String titre, String auteur, String codeISBN) {
+        this.titre = titre;
+        this.auteur = auteur;
+        this.codeISBN = codeISBN;
+    }
+
+    public String getTitre() { return titre; }
+    public String getAuteur() { return auteur; }
+    public String getCodeISBN() { return codeISBN; }
+
     public String livreDetails() {
-        return "Titre: " + titre + ", Auteur: " + auteur + ", ISBN: " + codeISBN;
+        return String.format("Titre: %s, Auteur: %s, ISBN: %s", titre, auteur, codeISBN);
     }
 }
