@@ -7,12 +7,8 @@ public class GestionnaireStock {
 
     private final List<Produit> produits = new ArrayList<>();
 
-    public void ajouterProduit(Produit produit, boolean logAjout) {
-        produits.add(produit);
-    }
-
     public void ajouterProduit(Produit produit) {
-        ajouterProduit(produit, false);
+        produits.add(produit);
     }
 
     public void afficherProduitsEnStock() {
