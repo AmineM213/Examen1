@@ -6,7 +6,6 @@ public class ApplicationStock {
         gestionnaire.ajouterProduit(new Produit("Laptop", 5));
         gestionnaire.ajouterProduit(new Produit("Laptop", 5));
         gestionnaire.ajouterProduit(new Produit("Smartphone", 10));
-        gestionnaire.afficherProduitsEnStock();
         gestionnaire.ajouterProduit(new Produit("Tablette", 0));
         gestionnaire.afficherProduitsEnStock();
     }

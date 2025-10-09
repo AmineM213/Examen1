@@ -15,14 +15,9 @@ public class GestionnaireStock {
         ajouterProduit(produit, false);
     }
 
-    private void afficherStockUneFois() {
+    public void afficherProduitsEnStock() {
         for (Produit produit : produits) {
             System.out.println(produit);
         }
-    }
-
-    public void afficherProduitsEnStock() {
-        afficherStockUneFois();
-        afficherStockUneFois();
     }
 }
