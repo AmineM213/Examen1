@@ -5,8 +5,8 @@ public class Produit {
     private final int quantite;
 
     public Produit(String nom, int quantite) {
-        this.nom = (nom == null) ? "Produit inconnu" : nom;
-        this.quantite = Math.max(quantite, 0);
+        this.nom = nom;
+        this.quantite = quantite;
     }
 
     public String getNom() {
