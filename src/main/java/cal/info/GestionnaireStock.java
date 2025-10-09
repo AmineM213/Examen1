@@ -9,9 +9,6 @@ public class GestionnaireStock {
 
     public void ajouterProduit(Produit produit, boolean logAjout) {
         produits.add(produit);
-        if (logAjout) {
-            System.out.println("Un produit a été ajouté : " + produit.getNom());
-        }
     }
 
     public void ajouterProduit(Produit produit) {
@@ -27,6 +24,5 @@ public class GestionnaireStock {
     public void afficherProduitsEnStock() {
         afficherStockUneFois();
         afficherStockUneFois();
-        System.out.println("Affichage terminé.");
     }
 }
